@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/bottom_background"
+        tools:ignore="ContentDescription" />
+
+    <Button
+        android:id="@+id/button"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="@dimen/_160sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/grey_button_background"
+        android:text="Get Started"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15sdp"
+        android:onClick="btngetStartedPressed"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:text="Download all the designs available \n on the uilover channel \n for free"
+       android:textSize="@dimen/_15sdp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/button" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/men" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to UiLover"
+        android:textColor="#582d99"
+        android:textSize="@dimen/_20sdp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
